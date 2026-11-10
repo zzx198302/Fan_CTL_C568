@@ -1,0 +1,113 @@
+#Generating source browse information for project C568_AT32F403ARGT7_LiteOS_IAR8
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build system_at32f403a_407.pbi : index system_at32f403a_407.xcl
+build at32f403a_407_acc.pbi : index at32f403a_407_acc.xcl
+build at32f403a_407_adc.pbi : index at32f403a_407_adc.xcl
+build at32f403a_407_bpr.pbi : index at32f403a_407_bpr.xcl
+build at32f403a_407_can.pbi : index at32f403a_407_can.xcl
+build at32f403a_407_crc.pbi : index at32f403a_407_crc.xcl
+build at32f403a_407_crm.pbi : index at32f403a_407_crm.xcl
+build at32f403a_407_dac.pbi : index at32f403a_407_dac.xcl
+build at32f403a_407_debug.pbi : index at32f403a_407_debug.xcl
+build at32f403a_407_dma.pbi : index at32f403a_407_dma.xcl
+build at32f403a_407_emac.pbi : index at32f403a_407_emac.xcl
+build at32f403a_407_exint.pbi : index at32f403a_407_exint.xcl
+build at32f403a_407_flash.pbi : index at32f403a_407_flash.xcl
+build at32f403a_407_gpio.pbi : index at32f403a_407_gpio.xcl
+build at32f403a_407_i2c.pbi : index at32f403a_407_i2c.xcl
+build at32f403a_407_misc.pbi : index at32f403a_407_misc.xcl
+build at32f403a_407_pwc.pbi : index at32f403a_407_pwc.xcl
+build at32f403a_407_rtc.pbi : index at32f403a_407_rtc.xcl
+build at32f403a_407_sdio.pbi : index at32f403a_407_sdio.xcl
+build at32f403a_407_spi.pbi : index at32f403a_407_spi.xcl
+build at32f403a_407_tmr.pbi : index at32f403a_407_tmr.xcl
+build at32f403a_407_usart.pbi : index at32f403a_407_usart.xcl
+build at32f403a_407_usb.pbi : index at32f403a_407_usb.xcl
+build at32f403a_407_wdt.pbi : index at32f403a_407_wdt.xcl
+build at32f403a_407_wwdt.pbi : index at32f403a_407_wwdt.xcl
+build at32f403a_407_xmc.pbi : index at32f403a_407_xmc.xcl
+build i2c_application.pbi : index i2c_application.xcl
+build aip1628_driver.pbi : index aip1628_driver.xcl
+build led_dsp.pbi : index led_dsp.xcl
+build los_hw.pbi : index los_hw.xcl
+build los_hw_tick.pbi : index los_hw_tick.xcl
+build los_hwi.pbi : index los_hwi.xcl
+build cmsis_liteos.pbi : index cmsis_liteos.xcl
+build los_err.pbi : index los_err.xcl
+build los_event.pbi : index los_event.xcl
+build los_heap.pbi : index los_heap.xcl
+build los_init.pbi : index los_init.xcl
+build los_membox.pbi : index los_membox.xcl
+build los_memcheck.pbi : index los_memcheck.xcl
+build los_memory.pbi : index los_memory.xcl
+build los_memstat.pbi : index los_memstat.xcl
+build los_misc.pbi : index los_misc.xcl
+build los_mux.pbi : index los_mux.xcl
+build los_priqueue.pbi : index los_priqueue.xcl
+build los_queue.pbi : index los_queue.xcl
+build los_sem.pbi : index los_sem.xcl
+build los_slab.pbi : index los_slab.xcl
+build los_slabmem.pbi : index los_slabmem.xcl
+build los_swtmr.pbi : index los_swtmr.xcl
+build los_sys.pbi : index los_sys.xcl
+build los_task.pbi : index los_task.xcl
+build los_tick.pbi : index los_tick.xcl
+build los_tickless.pbi : index los_tickless.xcl
+build los_timeslice.pbi : index los_timeslice.xcl
+build UserAdc.pbi : index UserAdc.xcl
+build UserCommon.pbi : index UserCommon.xcl
+build UserEprom.pbi : index UserEprom.xcl
+build UserEventLog.pbi : index UserEventLog.xcl
+build UserIO.pbi : index UserIO.xcl
+build UserUsart1_(RS1).pbi : index UserUsart1_(RS1).xcl
+build UserUsart6_(RS2).pbi : index UserUsart6_(RS2).xcl
+build UserVariable.pbi : index UserVariable.xcl
+build Keyboard.pbi : index Keyboard.xcl
+build M24C64.pbi : index M24C64.xcl
+build at32f403a_407_int.pbi : index at32f403a_407_int.xcl
+build at32f403a_407_wk_config.pbi : index at32f403a_407_wk_config.xcl
+build main.pbi : index main.xcl
+build rtc.pbi : index rtc.xcl
+build wk_adc.pbi : index wk_adc.xcl
+build wk_debug.pbi : index wk_debug.xcl
+build wk_dma.pbi : index wk_dma.xcl
+build wk_gpio.pbi : index wk_gpio.xcl
+build wk_i2c.pbi : index wk_i2c.xcl
+build wk_rtc.pbi : index wk_rtc.xcl
+build wk_system.pbi : index wk_system.xcl
+build wk_tmr.pbi : index wk_tmr.xcl
+build wk_usart.pbi : index wk_usart.xcl
+build wk_wdt.pbi : index wk_wdt.xcl
+build C568_AT32F403ARGT7_LiteOS_IAR8_part0.pbi : link system_at32f403a_407.pbi at32f403a_407_acc.pbi at32f403a_407_adc.pbi at32f403a_407_bpr.pbi at32f403a_407_can.pbi at32f403a_407_crc.pbi at32f403a_407_crm.pbi at32f403a_407_dac.pbi at32f403a_407_debug.pbi
+build C568_AT32F403ARGT7_LiteOS_IAR8_part1.pbi : link at32f403a_407_dma.pbi at32f403a_407_emac.pbi at32f403a_407_exint.pbi at32f403a_407_flash.pbi at32f403a_407_gpio.pbi at32f403a_407_i2c.pbi at32f403a_407_misc.pbi at32f403a_407_pwc.pbi at32f403a_407_rtc.pbi
+build C568_AT32F403ARGT7_LiteOS_IAR8_part2.pbi : link at32f403a_407_sdio.pbi at32f403a_407_spi.pbi at32f403a_407_tmr.pbi at32f403a_407_usart.pbi at32f403a_407_usb.pbi at32f403a_407_wdt.pbi at32f403a_407_wwdt.pbi at32f403a_407_xmc.pbi i2c_application.pbi
+build C568_AT32F403ARGT7_LiteOS_IAR8_part3.pbi : link aip1628_driver.pbi led_dsp.pbi los_hw.pbi los_hw_tick.pbi los_hwi.pbi cmsis_liteos.pbi los_err.pbi los_event.pbi los_heap.pbi
+build C568_AT32F403ARGT7_LiteOS_IAR8_part4.pbi : link los_init.pbi los_membox.pbi los_memcheck.pbi los_memory.pbi los_memstat.pbi los_misc.pbi los_mux.pbi los_priqueue.pbi los_queue.pbi
+build C568_AT32F403ARGT7_LiteOS_IAR8_part5.pbi : link los_sem.pbi los_slab.pbi los_slabmem.pbi los_swtmr.pbi los_sys.pbi los_task.pbi los_tick.pbi los_tickless.pbi los_timeslice.pbi
+build C568_AT32F403ARGT7_LiteOS_IAR8_part6.pbi : link UserAdc.pbi UserCommon.pbi UserEprom.pbi UserEventLog.pbi UserIO.pbi UserUsart1_(RS1).pbi UserUsart6_(RS2).pbi UserVariable.pbi Keyboard.pbi
+build C568_AT32F403ARGT7_LiteOS_IAR8_part7.pbi : link M24C64.pbi at32f403a_407_int.pbi at32f403a_407_wk_config.pbi main.pbi rtc.pbi wk_adc.pbi wk_debug.pbi wk_dma.pbi wk_gpio.pbi
+build C568_AT32F403ARGT7_LiteOS_IAR8_part8.pbi : link wk_i2c.pbi wk_rtc.pbi wk_system.pbi wk_tmr.pbi wk_usart.pbi wk_wdt.pbi
+build C568_AT32F403ARGT7_LiteOS_IAR8.pbd : link C568_AT32F403ARGT7_LiteOS_IAR8_part0.pbi C568_AT32F403ARGT7_LiteOS_IAR8_part1.pbi C568_AT32F403ARGT7_LiteOS_IAR8_part2.pbi C568_AT32F403ARGT7_LiteOS_IAR8_part3.pbi C568_AT32F403ARGT7_LiteOS_IAR8_part4.pbi C568_AT32F403ARGT7_LiteOS_IAR8_part5.pbi C568_AT32F403ARGT7_LiteOS_IAR8_part6.pbi C568_AT32F403ARGT7_LiteOS_IAR8_part7.pbi C568_AT32F403ARGT7_LiteOS_IAR8_part8.pbi
+build C568_AT32F403ARGT7_LiteOS_IAR8.pbw : browsedata C568_AT32F403ARGT7_LiteOS_IAR8.pbd
+
+

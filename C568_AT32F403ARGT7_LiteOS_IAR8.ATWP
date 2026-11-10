@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <WorkBenchVersion>
+        <Version>V1.1.09</Version>
+    </WorkBenchVersion>
+    <MCUInfo>
+        <MCUSerials>AT32F403A</MCUSerials>
+        <MCUName>AT32F403ARGT7</MCUName>
+        <MCUPackage>LQFP64</MCUPackage>
+    </MCUInfo>
+    <ADC1>
+        <Mode>
+            <ModeSub name="IN4" value="TRUE"/>
+            <ModeSub name="IN5" value="TRUE"/>
+            <ModeSub name="IN6" value="TRUE"/>
+            <ModeSub name="VINTRV" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="OrdinaryTriggerSource" value="ADC12_ORDINARY_TRIG_TMR2CH2"/>
+            <ParametersSub name="NbrOfOrdinarySequence" value="4"/>
+            <ParametersSub name="Channel_OrdinarySequence_1" value="ADC_CHANNEL_4"/>
+            <ParametersSub name="SamplingTime_OrdinarySequence_1" value="ADC_SAMPLETIME_71_5"/>
+            <ParametersSub name="Channel_OrdinarySequence_2" value="ADC_CHANNEL_5"/>
+            <ParametersSub name="SamplingTime_OrdinarySequence_2" value="ADC_SAMPLETIME_71_5"/>
+            <ParametersSub name="Channel_OrdinarySequence_3" value="ADC_CHANNEL_6"/>
+            <ParametersSub name="SamplingTime_OrdinarySequence_3" value="ADC_SAMPLETIME_71_5"/>
+            <ParametersSub name="Channel_OrdinarySequence_4" value="ADC_CHANNEL_17"/>
+            <ParametersSub name="SamplingTime_OrdinarySequence_4" value="ADC_SAMPLETIME_71_5"/>
+        </Parameters>
+    </ADC1>
+    <CRM>
+        <Mode>
+            <ModeSub name="HEXT" value="HEXT-External-Oscillator"/>
+            <ModeSub name="LEXT" value="LEXT-External-Oscillator"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="HEXT" value="HEXT_CRYSTAL"/>
+            <ParametersSub name="LEXT" value="LEXT_CRYSTAL"/>
+        </Parameters>
+    </CRM>
+    <DEBUG>
+        <Mode>
+            <ModeSub name="Debug interface" value="SWD"/>
+        </Mode>
+    </DEBUG>
+    <I2C2>
+        <Mode>
+            <ModeSub name="I2C" value="I2C"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="I2C_Mode" value="I2C_Fast"/>
+            <ParametersSub name="DutyCycle" value="I2C_FSMODE_DUTY_2_1"/>
+            <ParametersSub name="DualAddressMode" value="DISABLE"/>
+            <ParametersSub name="GeneralCallMode" value="FALSE"/>
+        </Parameters>
+    </I2C2>
+    <RTC>
+        <Mode>
+            <ModeSub name="RTC_Enabled" value="TRUE"/>
+            <ModeSub name="RTC_Calendar" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="Hours" value="8"/>
+            <ParametersSub name="Year" value="2026"/>
+        </Parameters>
+    </RTC>
+    <SYSTEM>
+        <Mode>
+            <ModeSub name="Time_Base" value="SysTick"/>
+        </Mode>
+    </SYSTEM>
+    <TMR2>
+        <Mode>
+            <ModeSub name="Channel2 mode" value="Output_without_pin"/>
+            <ModeSub name="Activated" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="DividerValue" value="239"/>
+            <ParametersSub name="Period" value="155"/>
+            <ParametersSub name="OCMode_2" value="TMR_OUTPUT_CONTROL_PWM_MODE_A"/>
+            <ParametersSub name="ChannelData_2" value="78"/>
+        </Parameters>
+    </TMR2>
+    <TMR6>
+        <Mode>
+            <ModeSub name="Activated" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="DividerValue" value="239"/>
+            <ParametersSub name="Period" value="999"/>
+        </Parameters>
+    </TMR6>
+    <TMR7>
+        <Mode>
+            <ModeSub name="Activated" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="DividerValue" value="2399"/>
+            <ParametersSub name="Period" value="4999"/>
+        </Parameters>
+    </TMR7>
+    <USART1>
+        <Mode>
+            <ModeSub name="Mode" value="Asynchronous"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="BaudRate" value="9600"/>
+            <ParametersSub name="RealBaudRate" value="9600"/>
+        </Parameters>
+    </USART1>
+    <USART6>
+        <Mode>
+            <ModeSub name="Mode" value="Asynchronous"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="BaudRate" value="9600"/>
+            <ParametersSub name="RealBaudRate" value="9600"/>
+        </Parameters>
+    </USART6>
+    <WDT>
+        <Mode>
+            <ModeSub name="WDT_State" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="Prescaler" value="WDT_CLK_DIV_64"/>
+            <ParametersSub name="Reload" value="624"/>
+        </Parameters>
+    </WDT>
+    <DMA>
+        <ADC1>
+            <ParametersSub name="Instance" value="DMA1_Channel1"/>
+        </ADC1>
+    </DMA>
+    <NVIC>
+        <PriorityGroup>NVIC_PRIORITY_GROUP_2</PriorityGroup>
+        <SysTick_Handler>1;0;0;0;0</SysTick_Handler>
+        <TAMPER_IRQHandler>0;0;0;0;0</TAMPER_IRQHandler>
+        <RTC_IRQHandler>0;0;0;0;0</RTC_IRQHandler>
+        <FLASH_IRQHandler>0;0;0;0;0</FLASH_IRQHandler>
+        <CRM_IRQHandler>0;0;0;0;0</CRM_IRQHandler>
+        <DMA1_Channel1_IRQHandler>1;0;0;0;0</DMA1_Channel1_IRQHandler>
+        <ADC1_2_IRQHandler>0;0;0;0;0</ADC1_2_IRQHandler>
+        <TMR2_GLOBAL_IRQHandler>0;0;0;0;0</TMR2_GLOBAL_IRQHandler>
+        <I2C2_EVT_IRQHandler>0;0;0;0;0</I2C2_EVT_IRQHandler>
+        <I2C2_ERR_IRQHandler>0;0;0;0;0</I2C2_ERR_IRQHandler>
+        <USART1_IRQHandler>1;0;1;0;0</USART1_IRQHandler>
+        <RTCAlarm_IRQHandler>0;0;0;0;0</RTCAlarm_IRQHandler>
+        <TMR6_GLOBAL_IRQHandler>1;1;1;0;0</TMR6_GLOBAL_IRQHandler>
+        <TMR7_GLOBAL_IRQHandler>1;1;0;0;0</TMR7_GLOBAL_IRQHandler>
+        <USART6_IRQHandler>1;0;2;0;0</USART6_IRQHandler>
+    </NVIC>
+    <GPIO>
+        <Signal SignalName="GPIO_Output" PinName="PC0">
+            <Parameters name="Label" value="KG1"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PC1">
+            <Parameters name="Label" value="KG2"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PC2">
+            <Parameters name="Label" value="KG3"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PC3">
+            <Parameters name="Label" value="KG4"/>
+        </Signal>
+        <Signal SignalName="ADC1_IN4" PinName="PA4">
+            <Parameters name="Label" value="ADC1_IF1"/>
+        </Signal>
+        <Signal SignalName="ADC1_IN5" PinName="PA5">
+            <Parameters name="Label" value="ADC1_IF2"/>
+        </Signal>
+        <Signal SignalName="ADC1_IN6" PinName="PA6">
+            <Parameters name="Label" value="ADC1_IF3"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PA7">
+            <Parameters name="Label" value="kG5"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PC4">
+            <Parameters name="Label" value="KG6"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PC5">
+            <Parameters name="Label" value="KG7"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PB0">
+            <Parameters name="Label" value="KG8"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PB2/BOOT1">
+            <Parameters name="Label" value="EE_WP"/>
+        </Signal>
+        <Signal SignalName="I2C2_SCL" PinName="PB10">
+            <Parameters name="Label" value="EE_SCL"/>
+        </Signal>
+        <Signal SignalName="I2C2_SDA" PinName="PB11">
+            <Parameters name="Label" value="EE_SDA"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PC8">
+            <Parameters name="Label" value="USART6_RT"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PA11">
+            <Parameters name="Label" value="USART1_RT"/>
+        </Signal>
+        <Signal SignalName="GPIO_Input" PinName="PA15">
+            <Parameters name="Label" value="SW7"/>
+        </Signal>
+        <Signal SignalName="GPIO_Input" PinName="PC10">
+            <Parameters name="Label" value="SW6"/>
+        </Signal>
+        <Signal SignalName="GPIO_Input" PinName="PC11">
+            <Parameters name="Label" value="SW5"/>
+        </Signal>
+        <Signal SignalName="GPIO_Input" PinName="PC12">
+            <Parameters name="Label" value="SW4"/>
+        </Signal>
+        <Signal SignalName="GPIO_Input" PinName="PD2">
+            <Parameters name="Label" value="SW3"/>
+        </Signal>
+        <Signal SignalName="GPIO_Input" PinName="PB3">
+            <Parameters name="Label" value="SW2"/>
+        </Signal>
+        <Signal SignalName="GPIO_Input" PinName="PB4">
+            <Parameters name="Label" value="SW1"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PB5">
+            <Parameters name="Label" value="LED_STB"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PB6">
+            <Parameters name="Label" value="LED_CLK"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PB7">
+            <Parameters name="Label" value="LED_DIO"/>
+        </Signal>
+        <Signal SignalName="GPIO_Input" PinName="PB8">
+            <Parameters name="Label" value="SW8"/>
+        </Signal>
+    </GPIO>
+    <ClockConfiguration>
+        <rtcsel>1</rtcsel>
+        <hext>8.000000</hext>
+        <hextdiv>2</hextdiv>
+        <pllhextdiv>0</pllhextdiv>
+        <pllrcs>0</pllrcs>
+        <pllmult>30</pllmult>
+        <sclkselect>1</sclkselect>
+        <ahbdiv>1</ahbdiv>
+        <apb1div>2</apb1div>
+        <apb2div>2</apb2div>
+        <usbdiv>4.0</usbdiv>
+        <hicktousb>1</hicktousb>
+        <hicktosclk>0</hicktosclk>
+        <clkout>0</clkout>
+        <clkoutdiv>1</clkoutdiv>
+        <adcdiv>6</adcdiv>
+        <systicsel>8</systicsel>
+    </ClockConfiguration>
+    <PINInfo>
+        <PinSub pinname="PC14" signalname="CRM_LEXT_IN" signaltype="2"/>
+        <PinSub pinname="PC15" signalname="CRM_LEXT_OUT" signaltype="2"/>
+        <PinSub pinname="PD0/HEXT_IN" signalname="CRM_HEXT_IN" signaltype="2"/>
+        <PinSub pinname="PD1/HEXT_OUT" signalname="CRM_HEXT_OUT" signaltype="2"/>
+        <PinSub pinname="PC0" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PC1" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PC2" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PC3" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PA4" signalname="ADC1_IN4" signaltype="3"/>
+        <PinSub pinname="PA5" signalname="ADC1_IN5" signaltype="3"/>
+        <PinSub pinname="PA6" signalname="ADC1_IN6" signaltype="3"/>
+        <PinSub pinname="PA7" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PC4" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PC5" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PB0" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PB2/BOOT1" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PB10" signalname="I2C2_SCL" signaltype="2"/>
+        <PinSub pinname="PB11" signalname="I2C2_SDA" signaltype="2"/>
+        <PinSub pinname="PC6" signalname="USART6_TX" signaltype="2"/>
+        <PinSub pinname="PC7" signalname="USART6_RX" signaltype="2"/>
+        <PinSub pinname="PC8" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PA9" signalname="USART1_TX" signaltype="2"/>
+        <PinSub pinname="PA10" signalname="USART1_RX" signaltype="2"/>
+        <PinSub pinname="PA11" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PA13" signalname="DEBUG_JTMS_SWDIO" signaltype="2"/>
+        <PinSub pinname="PA14" signalname="DEBUG_JTCK_SWCLK" signaltype="2"/>
+        <PinSub pinname="PA15" signalname="GPIO_Input" signaltype="3"/>
+        <PinSub pinname="PC10" signalname="GPIO_Input" signaltype="3"/>
+        <PinSub pinname="PC11" signalname="GPIO_Input" signaltype="3"/>
+        <PinSub pinname="PC12" signalname="GPIO_Input" signaltype="3"/>
+        <PinSub pinname="PD2" signalname="GPIO_Input" signaltype="3"/>
+        <PinSub pinname="PB3" signalname="GPIO_Input" signaltype="3"/>
+        <PinSub pinname="PB4" signalname="GPIO_Input" signaltype="3"/>
+        <PinSub pinname="PB5" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PB6" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PB7" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PB8" signalname="GPIO_Input" signaltype="3"/>
+    </PINInfo>
+    <ProjectInfomation>
+        <ProjectName>C568_AT32F403ARGT7_LiteOS_IAR8</ProjectName>
+        <ProjectLocation>D:/DepartmentalProjects/Software-2026/07-C568/Project</ProjectLocation>
+        <ToolchainIDE>IAR_V8.2</ToolchainIDE>
+        <ARMCompiler>0</ARMCompiler>
+        <KeepUserCode>true</KeepUserCode>
+        <NotUsedPinAnalog>true</NotUsedPinAnalog>
+        <CodeSplitIP>true</CodeSplitIP>
+        <AddNecessaryFileFlag>false</AddNecessaryFileFlag>
+        <MinHeapSize>0x200</MinHeapSize>
+        <MinStackSize>0x400</MinStackSize>
+        <UseFirmware>true</UseFirmware>
+        <PackageVersion>V2.2.2</PackageVersion>
+    </ProjectInfomation>
+</Root>

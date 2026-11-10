@@ -1,0 +1,15 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armjlink2.dll" 
+
+"D:\DepartmentalProjects\Software-2026\07-C568\Project\C568_AT32F403ARGT7_LiteOS_IAR8_260630\project\IAR_V8.2\C568_AT32F403ARGT7_LiteOS_IAR8\Exe\C568_AT32F403ARGT7_LiteOS_IAR8.out" 
+
+--plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\config\debugger\ArteryTek\AT32F403Axx.dmac" 
+
+--flash_loader="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\config\flashloader\ArteryTek\AT32F403A\AT32F403ARGT7\FlashAT32F403ARGT7.board" 
+
+
+
+

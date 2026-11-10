@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userOverrides>
+    <override>
+        <path>D:\DepartmentalProjects\Software-2026\07-C568\Project\C568_AT32F403ARGT7_LiteOS_IAR8\NewFile\UserApp\UserUsart6_(RS2).c</path>
+        <encoding>UTF-8</encoding>
+    </override>
+    <override>
+        <path>D:\DepartmentalProjects\Software-2026\07-C568\Project\C568_AT32F403ARGT7_LiteOS_IAR8\NewFile\UserDriver\M24C02.c</path>
+        <encoding>UTF-8</encoding>
+    </override>
+    <override>
+        <path>D:\DepartmentalProjects\Software-2026\07-C568\Project\C568_AT32F403ARGT7_LiteOS_IAR8\project\inc\at32f403a_407_wk_config.h</path>
+        <encoding>UTF-8</encoding>
+    </override>
+    <override>
+        <path>D:\DepartmentalProjects\Software-2026\07-C568\Project\C568_AT32F403ARGT7_LiteOS_IAR8\project\src\main.c</path>
+        <encoding>UTF-8</encoding>
+    </override>
+</userOverrides>
