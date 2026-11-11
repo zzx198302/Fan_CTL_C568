@@ -1,0 +1,18 @@
+{
+  "workspace": {
+    "path": "${workspaceFolder}\\project\\IAR_V8.2\\C568_AT32F403ARGT7_LiteOS_IAR8.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}\\project\\IAR_V8.2\\C568_AT32F403ARGT7_LiteOS_IAR8.eww": {
+      "configs": {
+        "${workspaceFolder}\\project\\IAR_V8.2\\C568_AT32F403ARGT7_LiteOS_IAR8.ewp": "C568_AT32F403ARGT7_LiteOS_IAR8"
+      },
+      "selected": {
+        "path": "${workspaceFolder}\\project\\IAR_V8.2\\C568_AT32F403ARGT7_LiteOS_IAR8.ewp"
+      }
+    }
+  },
+  "workbench": {
+    "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3"
+  }
+}
